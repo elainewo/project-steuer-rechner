@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommensteuer-Berechnung</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <section>
+
+        <div>
+            <h1>Einkommensteuerrechner</h1>
+            <form action="">
+                <label for="">Jahr:</label>
+                <select id="years" name="">
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                  </select><br>
+                <label for="">zu versteuerndes Einkommen:</label>
+                <input id="betrag" type="number" placeholder="Euro"><br>
+                <label for="">Art der Veranlagung:</label>
+                <select id="pers" name="">
+                    <option value="pers1">Einzelveranlagung</option>
+                    <option value="pers2">Zusammenveranlagung</option>
+                  </select><br>
+                  <input type="button" value="Berechnen" onclick="combo()">
+
+                  <p id="ergebnis">Einkommensteuer = </p>
+            </form>
+        </div>
+
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
